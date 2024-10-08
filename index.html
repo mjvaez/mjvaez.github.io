@@ -4,11 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MohammadJavad Vaez | CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/64f8958bc6.js" crossorigin="anonymous"></script>
   <style>
     body {
       font-family: 'EB Garamond', serif;
       line-height: 1.6;
-      margin: 20px;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+    }
+    .site-title {
+      font-size: 2em;
+      text-decoration: none;
+      color: #000;
+    }
+    .site-nav {
+      margin-top: 10px;
+    }
+    .site-nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #007BFF;
+    }
+    .cv-header {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .cv-header table {
+      width: 100%;
+      margin-top: 10px;
+      border-collapse: collapse;
+    }
+    .cv-header td {
+      padding: 10px;
     }
     h3 {
       margin-top: 30px;
@@ -18,108 +61,120 @@
     p, li {
       margin-bottom: 10px;
     }
-    .cv-header table {
-      width: 100%;
-      margin-top: 10px;
-    }
-    .cv-header td {
-      padding-right: 15px;
-    }
     ul {
       list-style-type: none;
       padding-left: 0;
     }
     ul li::before {
       content: "• ";
+      color: #007BFF;
+    }
+    .print-button {
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <div class="wrapper">
+      <a class="site-title" href="#">MohammadJavad Vaez</a>
+      <nav class="site-nav">
+        <a href="#">CV</a>
+        <a href="#">Projects</a>
+        <a href="#">Blog</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="cv-header">
-    <h1>MohammadJavad Vaez</h1>
-    <table>
-      <tr>
-        <td>Email: mjvaez@gmail.com</td>
-        <td>Website: <a href="https://mohammadjavad-vaez.github.io">mohammadjavad-vaez.github.io</a></td>
-        <td>GitHub: <a href="https://github.com/mjvaez">github.com/mjvaez</a></td>
-        <td>LinkedIn: <a href="https://linkedin.com/in/mohammadjavad-vaez">linkedin.com/in/mohammadjavad-vaez</a></td>
-      </tr>
-    </table>
+  <div class="wrapper">
+    <p class="print-button">
+      <a href="javascript:window.print();"><i class="fa-solid fa-print"></i> Print</a>
+    </p>
+
+    <div class="cv-header">
+      <p>MohammadJavad Vaez</p>
+      <table>
+        <tr>
+          <td>Email: <a href="mailto:mjvaez@gmail.com">mjvaez@gmail.com</a></td>
+          <td>Website: <a href="https://mohammadjavad-vaez.github.io">mohammadjavad-vaez.github.io</a></td>
+          <td>GitHub: <a href="https://github.com/mjvaez">github.com/mjvaez</a></td>
+          <td>LinkedIn: <a href="https://linkedin.com/in/mohammadjavad-vaez">linkedin.com/in/mohammadjavad-vaez</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Education Section -->
+    <h3>EDUCATION</h3>
+    <p><strong>M.Sc. in Computer Science (AI Specialty)</strong> - University of Tehran <span style="float: right;">2022 - Present</span></p>
+    <ul>
+      <li>GPA: 3.82/4</li>
+      <li>Thesis: <em>Sinusoidal Trainable Activation Functions for Implicit Neural Representation</em></li>
+      <li>University of Tehran is ranked first for computer science in Iran (U.S. News ranking)</li>
+    </ul>
+    
+    <p><strong>B.Sc. in Mathematics (Second Major)</strong> - University of Isfahan <span style="float: right;">2018 - 2022</span></p>
+    <ul>
+      <li>GPA: 3.84/4</li>
+    </ul>
+
+    <p><strong>B.Sc. in Computer Engineering (Hardware Specialty)</strong> - University of Isfahan <span style="float: right;">2017 - 2022</span></p>
+    <ul>
+      <li>GPA: 3.75/4</li>
+      <li>Final Project: Applications of Group Theory and Automata Theory in Faster State Space Searching</li>
+    </ul>
+
+    <!-- Publications Section -->
+    <h3>PUBLICATIONS</h3>
+    <ul>
+      <li>Vaez, M. (2024). <em>Sinusoidal Trainable Activation Functions for Implicit Neural Representation</em>. Under review at a top-tier AI conference.</li>
+      <li>Vaez, M., & Mohammad-Noori, M. (2024). <em>An alternative approach to inverse Z-transform of rational functions</em>. Under review at Journal of Engineering Mathematics.</li>
+      <li>Vaez, M. (2024). <em>Random generation of group elements using combinatorial group theory and automata theory</em>. Submitted to a prestigious journal.</li>
+    </ul>
+
+    <!-- Teaching Experience Section -->
+    <h3>TEACHING EXPERIENCE</h3>
+    <p><strong>Teaching Assistant</strong> - Advanced Theory of Algorithms, University of Tehran <span style="float: right;">Fall 2024</span></p>
+    <ul>
+      <li>Assisted Dr. Morteza Mohammad-Noori in teaching advanced concepts in algorithms and complexity theory.</li>
+      <li>Led recitation sessions, provided feedback on homework, and helped students during office hours.</li>
+    </ul>
+
+    <p><strong>Teaching Assistant</strong> - Calculus II, University of Isfahan <span style="float: right;">Fall 2018</span></p>
+    <ul>
+      <li>Supported Dr. Ehsan Hakimian in instructing undergraduate students in calculus.</li>
+      <li>Responsible for grading assignments and holding weekly office hours for student assistance.</li>
+    </ul>
+
+    <!-- Computer Skills Section -->
+    <h3>COMPUTER SKILLS</h3>
+    <ul>
+      <li><strong>Languages:</strong> C/C++, Matlab, Python, LaTeX</li>
+      <li><strong>Microcontrollers:</strong> AVR, Hspice, VHDL, Proteus</li>
+      <li><strong>Version Control:</strong> Git, GitHub (LinkedIn Certification: <a href="https://www.linkedin.com/learning/certificates/e460432ad2da6c952e49ad1dbc332ca90222d41b8165796f9129fd3a5e468d44?trk=share_certificate">View Certification</a>)</li>
+    </ul>
+
+    <!-- Languages Section -->
+    <h3>LANGUAGES</h3>
+    <ul>
+      <li><strong>Persian:</strong> Native</li>
+      <li><strong>English:</strong> Fluent, IELTS score: 7.5 (Speaking: 7.5)</li>
+    </ul>
+
+    <!-- Projects Section -->
+    <h3>PROJECTS</h3>
+    <ul>
+      <li><strong>Hardware Design using Group Theory</strong> - Designed and implemented hardware systems using automata theory and group theory to optimize state-space searching. (2021)</li>
+      <li><strong>Implicit Neural Representation</strong> - Developed new activation functions for neural networks, leading to more efficient learning in implicit neural representations. (2024)</li>
+    </ul>
+
+    <!-- Research Interests Section -->
+    <h3>RESEARCH INTERESTS</h3>
+    <ul>
+      <li>Artificial Intelligence and Machine Learning</li>
+      <li>Neural Networks and Deep Learning</li>
+      <li>Bioinformatics and Biomedical Engineering</li>
+      <li>Neuromorphic Engineering</li>
+    </ul>
   </div>
-
-  <!-- Education Section -->
-  <h3>EDUCATION</h3>
-  <p><strong>M.Sc. in Computer Science (AI Specialty)</strong> - University of Tehran <span style="float: right;">2022 - Present</span></p>
-  <ul>
-    <li>GPA: 3.82/4</li>
-    <li>Thesis: <em>Sinusoidal Trainable Activation Functions for Implicit Neural Representation</em></li>
-    <li>University of Tehran is ranked first for computer science in Iran (U.S. News ranking)</li>
-  </ul>
-  
-  <p><strong>B.Sc. in Mathematics (Second Major)</strong> - University of Isfahan <span style="float: right;">2018 - 2022</span></p>
-  <ul>
-    <li>GPA: 3.84/4</li>
-  </ul>
-
-  <p><strong>B.Sc. in Computer Engineering (Hardware Specialty)</strong> - University of Isfahan <span style="float: right;">2017 - 2022</span></p>
-  <ul>
-    <li>GPA: 3.75/4</li>
-    <li>Final Project: Applications of Group Theory and Automata Theory in Faster State Space Searching</li>
-  </ul>
-
-  <!-- Publications Section -->
-  <h3>PUBLICATIONS</h3>
-  <ul>
-    <li>Vaez, M. (2024). <em>Sinusoidal Trainable Activation Functions for Implicit Neural Representation</em>. Under review at a top-tier AI conference.</li>
-    <li>Vaez, M., & Mohammad-Noori, M. (2024). <em>An alternative approach to inverse Z-transform of rational functions</em>. Under review at Journal of Engineering Mathematics.</li>
-    <li>Vaez, M. (2024). <em>Random generation of group elements using combinatorial group theory and automata theory</em>. Submitted to a prestigious journal.</li>
-  </ul>
-
-  <!-- Teaching Experience Section -->
-  <h3>TEACHING EXPERIENCE</h3>
-  <p><strong>Teaching Assistant</strong> - Advanced Theory of Algorithms, University of Tehran <span style="float: right;">Fall 2024</span></p>
-  <ul>
-    <li>Assisted Dr. Morteza Mohammad-Noori in teaching advanced concepts in algorithms and complexity theory.</li>
-    <li>Led recitation sessions, provided feedback on homework, and helped students during office hours.</li>
-  </ul>
-
-  <p><strong>Teaching Assistant</strong> - Calculus II, University of Isfahan <span style="float: right;">Fall 2018</span></p>
-  <ul>
-    <li>Supported Dr. Ehsan Hakimian in instructing undergraduate students in calculus.</li>
-    <li>Responsible for grading assignments and holding weekly office hours for student assistance.</li>
-  </ul>
-
-  <!-- Computer Skills Section -->
-  <h3>COMPUTER SKILLS</h3>
-  <ul>
-    <li><strong>Languages:</strong> C/C++, Matlab, Python, LaTeX</li>
-    <li><strong>Microcontrollers:</strong> AVR, Hspice, VHDL, Proteus</li>
-    <li><strong>Version Control:</strong> Git, GitHub (LinkedIn Certification: <a href="https://www.linkedin.com/learning/certificates/e460432ad2da6c952e49ad1dbc332ca90222d41b8165796f9129fd3a5e468d44?trk=share_certificate">View Certification</a>)</li>
-  </ul>
-
-  <!-- Languages Section -->
-  <h3>LANGUAGES</h3>
-  <ul>
-    <li><strong>Persian:</strong> Native</li>
-    <li><strong>English:</strong> Fluent, IELTS score: 7.5 (Speaking: 7.5)</li>
-  </ul>
-
-  <!-- Projects Section -->
-  <h3>PROJECTS</h3>
-  <ul>
-    <li><strong>Hardware Design using Group Theory</strong> - Designed and implemented hardware systems using automata theory and group theory to optimize state-space searching. (2021)</li>
-    <li><strong>Implicit Neural Representation</strong> - Developed new activation functions for neural networks, leading to more efficient learning in implicit neural representations. (2024)</li>
-  </ul>
-
-  <!-- Research Interests Section -->
-  <h3>RESEARCH INTERESTS</h3>
-  <ul>
-    <li>Artificial Intelligence and Machine Learning</li>
-    <li>Neural Networks and Deep Learning</li>
-    <li>Bioinformatics and Biomedical Engineering</li>
-    <li>Neuromorphic Engineering</li>
-  </ul>
-
 </body>
 </html>
