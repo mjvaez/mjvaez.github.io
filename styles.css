@@ -1,8 +1,5 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400&family=Vazir:wght@400&display=swap');
-
 body {
-    font-family: 'Merriweather', serif;
+    font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     margin: 0;
     padding: 20px;
@@ -13,41 +10,34 @@ header {
     margin-bottom: 20px;
 }
 
-/* 3D Text Style */
-.poem-content {
-    margin-bottom: 20px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Add a subtle 3D shadow effect */
+.poem-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.persian {
-    text-align: right;
-    font-family: 'Vazir', sans-serif; /* Use a beautiful Persian font */
-    direction: rtl; /* Right-to-left direction for Persian text */
+.poem-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    width: 200px;
 }
 
-.english {
-    text-align: left;
-    font-family: 'Merriweather', serif; /* Use a beautiful English font */
+.poem-card:hover {
+    transform: scale(1.05);
 }
 
-/* Additional styles for the poems */
-.poem-content p {
-    margin: 5px 0;
-    line-height: 1.6; /* Increase line height for better readability */
-}
-
-/* Link styles */
-a {
-    color: #007BFF; /* Change link color to a blue shade */
-    text-decoration: none; /* Remove underline from links */
-    font-weight: bold; /* Make links bold */
-}
-
-a:hover {
-    text-decoration: underline; /* Underline links on hover */
-    color: #0056b3; /* Darker shade on hover */
-}
-
-strong {
+.poem-number {
+    font-size: 24px;
     font-weight: bold;
+    color: #333;
+}
+
+.poem-card p {
+    margin: 5px 0;
 }
