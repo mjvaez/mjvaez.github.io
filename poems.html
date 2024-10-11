@@ -3,74 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Poems</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>My Poems</title>
 </head>
 <body>
-    <header class="site-header">
-        <div class="wrapper">
-            <a class="site-title" href="https://mjvaez.github.io/">
-                MohammadJavad Vaez
-            </a>
-            <nav class="site-nav">
-                <a href="#" class="menu-icon"></a>
-                <div class="menu">
-                    <a class="page-link" href="MohammadJavad-Vaez-CV.pdf" target="_blank">CV</a>
-                    <a class="page-link" href="poems.html">My Poems</a> <!-- Link to the same page, so it doesn't need target="_blank" -->
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <main>
+    <header>
         <h1>My Poems</h1>
-        <!-- Add your poems here -->
-        <div class="poem">
-    <h2>Poem Title: یار تو باشم روزی</h2>
-    <p>
-        باید چه کنم یار تو باشم روزی؟<br>
-        دلداده و دلدار تو باشم روزی<br>
-        افسانه و رویای منی، می‌خواهم<br>
-        اسطوره‌ی افکار تو باشم روزی
-    </p>
-    <p><strong>شاعر: محمدجواد واعظ</strong></p>
-</div>
+    </header>
+    <main>
+        <div class="poem-table">
+            <div class="poem-card" onclick="location.href='poem1.html'">
+                <div class="poem-number">1</div>
+                <p>باید چه کنم یار تو باشم روزی؟</p>
+                <p><em>What should I do to be your companion one day?</em></p>
+            </div>
 
-<div class="poem">
-    <h2>Poem Title: To Be Your Companion One Day</h2>
-    <p>
-        What should I do to be your companion one day?<br>
-        To be devoted and beloved by you one day.<br>
-        You are my legend and dream, I desire<br>
-        to be the myth of your thoughts one day.
-    </p>
-    <p><strong>Poet: MohammadJavad Vaez</strong></p>
-</div>
+            <div class="poem-card" onclick="location.href='poem2.html'">
+                <div class="poem-number">2</div>
+                <p>دلداده و دلدار تو باشم روزی</p>
+                <p><em>To be devoted and beloved by you one day.</em></p>
+            </div>
 
-        <div class="poem">
-            <h2>Title of Poem 2</h2>
-            <p>Content of Poem 2...</p>
+            <!-- Repeat the above div for more poems -->
         </div>
-        <!-- More poems as needed -->
     </main>
-
-    <div class="page-footer">
-        <div class="container">
-            <footer class="site-footer">
-                <p class="powered-by copyright-license-text">
-                    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
-                </p>
-                <p class="powered-by footer-license-icons">
-                    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
-                        <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
-                        <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
-                        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
-                        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
-                    </a>
-                </p>
-            </footer>
-        </div>
-    </div>
 </body>
 </html>
