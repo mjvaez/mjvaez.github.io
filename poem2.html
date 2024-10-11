@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMs23/j5/tk2ZT2VoGhWhOcKfb4Mo9Rm4My4q1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Poem Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .poem-container {
+            display: flex; /* Use flexbox for layout */
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            justify-content: space-between; /* Space between the poems */
+            margin: 20px;
+        }
+        .poem-content {
+            width: 48%; /* Adjust width for both sides */
+        }
+        .persian {
+            text-align: right; /* Align Persian text to the right */
+        }
+        .english {
+            text-align: left; /* Align English text to the left */
+        }
+        .page-footer {
+            margin-top: 40px;
+            text-align: center; /* Center footer text */
+        }
+        .footer-license-icons {
+            display: flex; /* Use flexbox for icons */
+            gap: 10px; /* Space between icons */
+            justify-content: center; /* Center the icons */
+        }
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            .poem-container {
+                flex-direction: column; /* Stack columns on top of each other */
+            }
+            .persian {
+                order: 1; /* Persian first on mobile */
+                width: 100%; /* Full width on mobile */
+                margin-bottom: 20px; /* Space below the Persian poem */
+            }
+            .english {
+                order: 2; /* English second on mobile */
+                width: 100%; /* Full width on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Poem Title: یار تو باشم روزی</h1>
+    </header>
+    <main>
+        <div class="poem-container">
+            <div class="poem-content english">
+                <p>Do not speak to me of the philosophies of Nietzsche and Kant,</p>
+                <p>Please do me a favor and tell me frankly what you want.</p>
+                <p>My mind is constantly filled with thoughts of you.</p>
+                <p>In your path, inch by inch, your love pulls me forward.</p>
+                <p><strong>Poet: MohammadJavad Vaez</strong></p>
+            </div>
+            <div class="poem-content persian">
+                <p>با من مگو از فلسفه‌ی نیچه و کانت</p>
+                <p>لطفی کن و tell frankly what you want</p>
+                <p>جز فکر تو نیست در سرم راه به راه</p>
+                <p>در راه تو می‌کِشد مرا سانت به سانت</p>
+                <p><strong>شاعر: محمدجواد واعظ</strong></p>
+            </div>
+        </div>
+    </main>
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+                <p class="powered-by copyright-license-text">
+                    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+                </p>
+                <p class="powered-by footer-license-icons">
+                    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+                        <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+                        <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+                        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+                        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+                    </a>
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
