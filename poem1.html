@@ -45,9 +45,14 @@
             .poem-container {
                 flex-direction: column; /* Stack columns on top of each other */
             }
-            .poem-content {
+            .persian {
+                order: 1; /* Persian first on mobile */
                 width: 100%; /* Full width on mobile */
-                margin-bottom: 20px; /* Space between poems */
+                margin-bottom: 20px; /* Space below the Persian poem */
+            }
+            .english {
+                order: 2; /* English second on mobile */
+                width: 100%; /* Full width on mobile */
             }
         }
     </style>
