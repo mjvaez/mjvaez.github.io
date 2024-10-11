@@ -6,25 +6,47 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMs23/j5/tk2ZT2VoGhWhOcKfb4Mo9Rm4My4q1" crossorigin="anonymous">
     <title>Poem Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .poem-content {
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space between the poems */
+            margin: 20px;
+        }
+        .poem-content div {
+            width: 48%; /* Adjust width for both sides */
+        }
+        .page-footer {
+            margin-top: 40px;
+        }
+        .footer-license-icons {
+            display: flex; /* Use flexbox for icons */
+            gap: 10px; /* Space between icons */
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Poem Title: یار تو باشم روزی</h1>
     </header>
     <main>
-        <div class="poem-content persian">
-            <p>باید چه کنم یار تو باشم روزی؟</p>
-            <p>دلداده و دلدار تو باشم روزی</p>
-            <p>افسانه و رویای منی، می‌خواهم</p>
-            <p>اسطوره‌ی افکار تو باشم روزی</p>
-            <p><strong>شاعر: محمدجواد واعظ</strong></p>
-        </div>
-        <div class="poem-content english">
-            <p>What should I do to be your companion one day?</p>
-            <p>To be devoted and beloved by you one day.</p>
-            <p>You are my legend and dream, I desire</p>
-            <p>to be the myth of your thoughts one day.</p>
-            <p><strong>Poet: MohammadJavad Vaez</strong></p>
+        <div class="poem-content">
+            <div class="persian">
+                <p>باید چه کنم یار تو باشم روزی؟</p>
+                <p>دلداده و دلدار تو باشم روزی</p>
+                <p>افسانه و رویای منی، می‌خواهم</p>
+                <p>اسطوره‌ی افکار تو باشم روزی</p>
+                <p><strong>شاعر: محمدجواد واعظ</strong></p>
+            </div>
+            <div class="english">
+                <p>What should I do to be your companion one day?</p>
+                <p>To be devoted and beloved by you one day.</p>
+                <p>You are my legend and dream, I desire</p>
+                <p>to be the myth of your thoughts one day.</p>
+                <p><strong>Poet: MohammadJavad Vaez</strong></p>
+            </div>
         </div>
     </main>
     <div class="page-footer">
