@@ -9,13 +9,20 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        .poem-content {
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .poem-container {
             display: flex; /* Use flexbox for layout */
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
             justify-content: space-between; /* Space between the poems */
             margin: 20px;
         }
-        .poem-content div {
+        .poem-content {
             width: 48%; /* Adjust width for both sides */
         }
         .persian {
@@ -26,10 +33,22 @@
         }
         .page-footer {
             margin-top: 40px;
+            text-align: center; /* Center footer text */
         }
         .footer-license-icons {
             display: flex; /* Use flexbox for icons */
             gap: 10px; /* Space between icons */
+            justify-content: center; /* Center the icons */
+        }
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            .poem-container {
+                flex-direction: column; /* Stack columns on top of each other */
+            }
+            .poem-content {
+                width: 100%; /* Full width on mobile */
+                margin-bottom: 20px; /* Space between poems */
+            }
         }
     </style>
 </head>
@@ -38,20 +57,20 @@
         <h1>Poem Title: یار تو باشم روزی</h1>
     </header>
     <main>
-        <div class="poem-content">
-            <div class="english">
-                <p>What should I do to be your companion one day?</p>
-                <p>To be devoted and beloved by you one day.</p>
-                <p>You are my legend and dream, I desire</p>
-                <p>to be the myth of your thoughts one day.</p>
-                <p><strong>Poet: MohammadJavad Vaez</strong></p>
-            </div>
-            <div class="persian">
+        <div class="poem-container">
+            <div class="poem-content persian">
                 <p>باید چه کنم یار تو باشم روزی؟</p>
                 <p>دلداده و دلدار تو باشم روزی</p>
                 <p>افسانه و رویای منی، می‌خواهم</p>
                 <p>اسطوره‌ی افکار تو باشم روزی</p>
                 <p><strong>شاعر: محمدجواد واعظ</strong></p>
+            </div>
+            <div class="poem-content english">
+                <p>What should I do to be your companion one day?</p>
+                <p>To be devoted and beloved by you one day.</p>
+                <p>You are my legend and dream, I desire</p>
+                <p>to be the myth of your thoughts one day.</p>
+                <p><strong>Poet: MohammadJavad Vaez</strong></p>
             </div>
         </div>
     </main>
