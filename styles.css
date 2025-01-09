@@ -41,25 +41,3 @@ header {
 .poem-card p {
     margin: 5px 0;
 }
-
-/* Media Query for Small Screens */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    header {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-
-    .poem-table {
-        flex-direction: column; /* Stack cards vertically on small screens */
-        align-items: center;   /* Center the stacked cards */
-    }
-
-    .poem-card {
-        width: 90%; /* Make cards take most of the screen width */
-        max-width: 300px;
-    }
-}
