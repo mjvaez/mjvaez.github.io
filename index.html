@@ -1,98 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <script src="https://kit.fontawesome.com/64f8958bc6.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <title>MohammadJavad Vaez | CV</title>
-  <meta name="description" content="MohammadJavad's personal web page"/>
-  <link rel="stylesheet" href="https://mjvaez.github.io/assets/css/main.css"/>
-  <link rel="shortcut icon" href="https://mjvaez.github.io/MJ.ico" type="image/x-icon"/>
-  <script>
-    window.ga = window.ga || function() { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
-    ga('create', "UA-121636368-3", "auto");
-    ga('send', "pageview");
-  </script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <style>
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #f4f4f4;
-    }
-    .menu-toggle {
-      font-size: 24px;
-      cursor: pointer;
-      display: none; /* Hide unless needed for mobile responsiveness */
-    }
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 15px;
-    }
-    .nav-links li {
-      display: inline;
-    }
-    .nav-links a {
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
-    }
-    @media (max-width: 768px) {
-      .menu-toggle {
-        display: block;
-      }
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-      }
-      .nav-links.active {
-        display: flex;
-      }
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MohammadJavad Vaez | CV</title>
+    <meta name="title" content="MohammadJavad Vaez | CV" />
+    <meta name="description" content="MohammadJavad's personal web page" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="MohammadJavad Vaez | CV" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mjvaez.io/cv" />
+    <meta property="og:title" content="MohammadJavad Vaez | CV" />
+    <meta property="og:description" content="MohammadJavad's personal web page" />
+    <meta property="og:image" content="https://mjvaez.github.io/assets/img/profile-pic.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mjvaez.github.io/cv" />
+    <meta property="twitter:title" content="MohammadJavad Vaez | CV" />
+    <meta property="twitter:description" content="MohammadJavad's personal web page" />
+    <meta property="twitter:image" content="https://mjvaez.github.io/assets/img/profile-pic.jpg" />
+    <meta property="twitter:creator" content="@mjvaez" />
+    <meta property="twitter:site" content="@mjvaez" />
+
+    <!-- Styles and Fonts -->
+    <script src="https://kit.fontawesome.com/64f8958bc6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://mjvaez.github.io/assets/css/main.css" />
+    <link rel="shortcut icon" href="https://mjvaez.github.io/MJ.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <!-- MathJax Script for LaTeX Rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', "UA-121636368-3", "auto");
+        ga('send', "pageview");
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
 </head>
+
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-      <ul class="nav-links">
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#poems">My Poems</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Navigation Header -->
+    <header>
+        <nav class="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#poems">My Poems</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <div class="page-content">
-    <div class="wrapper">
-      <div class="cv-header">
-        <p>MohammadJavad Vaez</p>
-        <table>
-          <tr>
-            <td>mohammadjavadvaez@gmail.com</td>
-            <td>mjvaez.github.io/</td>
-            <td>github.com/mjvaez</td>
-            <td>linkedin.com/in/mohammadjavad-vaez-172145125</td>
-          </tr>
-        </table>
-      </div>
-      <!-- Rest of your content goes here -->
+    <!-- Main Content -->
+    <div class="page-content">
+        <div class="wrapper">
+            <header class="site-header">
+                <div class="wrapper">
+                    <a class="site-title" href="https://mjvaez.github.io/">MohammadJavad Vaez</a>
+                    <nav class="site-nav">
+                        <a href="#" class="menu-icon"></a>
+                        <div class="menu">
+                            <a class="page-link" href="MohammadJavad-Vaez-CV.pdf" target="_blank">CV</a>
+                            <a class="page-link" href="poems.html">My Poems</a>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- Content Sections -->
+            <div class="cv-header">
+                <p>MohammadJavad Vaez</p>
+                <table>
+                    <tr>
+                        <td>mohammadjavadvaez@gmail.com</td>
+                        <td>mjvaez.github.io/</td>
+                        <td>github.com/mjvaez</td>
+                        <td>linkedin.com/in/mohammadjavad-vaez-172145125</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="cv">
+                <h3 id="education">EDUCATION</h3>
+                <p><strong>M.Sc. in Computer Science (AI Specialty)</strong> - University of Tehran <span style="float: right;">2022 - Now</span></p>
+                <ul>
+                    <li><a href="https://www.usnews.com/education/best-global-universities/iran/computer-science">University of Tehran is ranked first for computer science in Iran, based on the U.S.News ranking.</a></li>
+                    <li><strong>GPA:</strong> 3.82/4</li>
+                    <li><strong>Thesis:</strong> Sinusoidal Trainable Activation Functions for Implicit Neural Representation</li>
+                </ul>
+
+                <!-- Additional Sections: Add other content like publications, honors, teaching experience, etc. -->
+            </div>
+        </div>
     </div>
-  </div>
 
-  <script>
-    function toggleMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      navLinks.classList.toggle('active');
-    }
-  </script>
+    <script>
+        // JavaScript for Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
+
 </html>
