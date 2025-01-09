@@ -1,292 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <script src="https://kit.fontawesome.com/64f8958bc6.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-
-    <!-- MathJax Script for LaTeX Rendering -->
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-    <!-- Primary Meta Tags -->
-    <title>MohammadJavad Vaez | CV</title>
-    <meta name="title" content="MohammadJavad Vaez | CV"/>
-    <meta name="description" content="MohammadJavad's personal web page"/>
-  </head>
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:site_name" content="MohammadJavad Vaez | CV"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://mjvaez.io/cv"/>
-  <meta property="og:title" content="MohammadJavad Vaez | CV"/>
-  <meta property="og:description" content="MohammadJavad's personal web page"/>
-  <meta property="og:image" content="https://mjvaez.github.io/assets/img/profile-pic.jpg"/>
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image"/>
-  <meta property="twitter:url" content="https://mjvaez.github.io/cv"/>
-  <meta property="twitter:title" content="MohammadJavad Vaez | CV"/>
-  <meta property="twitter:description" content="MohammadJavad's personal web page"/>
-  <meta property="twitter:image" content="https://mjvaez.github.io/assets/img/profile-pic.jpg"/>
-  
-    <meta property="twitter:creator" content="@mjvaez"/>
-    <meta property="twitter:site" content="@mjvaez"/>
-  
-
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <script src="https://kit.fontawesome.com/64f8958bc6.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <title>MohammadJavad Vaez | CV</title>
+  <meta name="description" content="MohammadJavad's personal web page"/>
   <link rel="stylesheet" href="https://mjvaez.github.io/assets/css/main.css"/>
-  <link rel="canonical" href="https://mjvaez.github.io/cv"/>
   <link rel="shortcut icon" href="https://mjvaez.github.io/MJ.ico" type="image/x-icon"/>
-
-  <!-- Google Analytics -->
   <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    window.ga = window.ga || function() { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
     ga('create', "UA-121636368-3", "auto");
     ga('send', "pageview");
   </script>
   <script async src="https://www.google-analytics.com/analytics.js"></script>
-
-
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f4f4f4;
+    }
+    .menu-toggle {
+      font-size: 24px;
+      cursor: pointer;
+      display: none; /* Hide unless needed for mobile responsiveness */
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    .nav-links li {
+      display: inline;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+    }
+  </style>
 </head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links">
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#poems">My Poems</a></li>
+      </ul>
+    </nav>
+  </header>
 
-
-  <body>
-    <header class="site-header">
-      <div class="wrapper">
-        <a class="site-title" href="https://mjvaez.github.io/">
-          MohammadJavad Vaez
-        </a>
-
-        <nav class="site-nav">
-  <a href="#" class="menu-icon"></a>
-
-  <div class="menu">
-    <a class="page-link" href="MohammadJavad-Vaez-CV.pdf" target="_blank">
-      CV
-    </a>
-    <a class="page-link" href="poems.html">
-    My Poems
-	</a>
-  </div>
-</nav>
+  <div class="page-content">
+    <div class="wrapper">
+      <div class="cv-header">
+        <p>MohammadJavad Vaez</p>
+        <table>
+          <tr>
+            <td>mohammadjavadvaez@gmail.com</td>
+            <td>mjvaez.github.io/</td>
+            <td>github.com/mjvaez</td>
+            <td>linkedin.com/in/mohammadjavad-vaez-172145125</td>
+          </tr>
+        </table>
       </div>
-    </header>
-
-
-    <div class="page-content">
-      <div class="wrapper">
-
-        <div class="cv-header">
-          <p>MohammadJavad Vaez</p>
-
-          <table>
-            <tr>
-              <td>mohammadjavadvaez@gmail.com</td>
-              <td>mjvaez.github.io/</td>
-              <td>github.com/mjvaez</td>
-              <td>linkedin.com/in/mohammadjavad-vaez-172145125</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="cv">
-          <h3 id="education">EDUCATION</h3>
-          <p><strong>M.Sc. in Computer Science (AI Specialty)</strong> - University of Tehran <span style="float: right;">2022 - Now</span></p>
-          <ul>
-            <li><a href="https://www.usnews.com/education/best-global-universities/iran/computer-science">University of Tehran is ranked first for computer science in Iran, based on the U.S.News ranking.</a></li>
-            <li><strong>GPA:</strong> 3.82/4</li>
-            <li><strong>Thesis:</strong> Sinusoidal Trainable Activation Functions for Implicit Neural Representation</li>
-          </ul>
-          <p><strong>B.Sc. in Mathematics (Second Major)</strong> - University of Isfahan <span style="float: right;">2018 - 2022</span></p>
-          <ul>
-            <li><strong>GPA:</strong> 3.84/4</li>
-          </ul>
-          <p><strong>B.Sc. in Computer Engineering (Hardware Specialty)</strong> - University of Isfahan <span style="float: right;">2017 - 2022</span></p>
-          <ul>
-            <li><strong>GPA:</strong> 3.75/4</li>
-            <li><strong>Final Project:</strong> Applications of Group Theory and Automata Theory in Faster Searching of State Space</li>
-          </ul>
-          <p><strong>High School Diploma in Mathematics and Physics</strong> - National Organization for Development of Exceptional Talents (NODET) <span style="float: right;">2013 - 2017</span></p>
-          <h3 id="publications">PUBLICATIONS</h3>
-          <ul>
-            <li><em>Sinusoidal Trainable Activation Functions for Implicit Neural Representation:</em> Currently under review for an A* AI conference.
-              <ul>
-                <li>The submission is compliant with the conference's double-blind review process and has not been uploaded to <em>arXiv</em>.</li>
-              </ul>
-            </li>
-            <li><em>An alternative approach to inverse \(\mathcal{Z}\)-transform of rational functions:</em>
-              <ul>
-                <li><a href="https://arxiv.org/abs/2310.09808">Paper Link</a> - under review at the Journal of Engineering Mathematics</li>
-                <li>Implementation: <a href="https://github.com/mjvaez/inverse-Z-transform/blob/main/inverse_Z_transform.ipynb">GitHub Repository</a></li>
-              </ul>
-            </li>
-            <li><em>Random generation of group elements using combinatorial group theory and automata theory, along with a hardware example:</em>
-              <ul>
-                <li><a href="https://arxiv.org/abs/2311.16347">Paper Link</a> - to be submitted to a prestigious journal</li>
-              </ul>
-            </li>
-          </ul>
-          <h3 id="honors-and-awards">HONORS AND AWARDS</h3>
-          <ul>
-            <li><strong>Reviewer, ICLR 2025:</strong> International Conference on Learning Representations (2024)</li>
-            <li><strong>First Rank among Math Students:</strong> University of Isfahan, Class of 2017 and 2018 (2022)</li>
-            <li><strong>Admitted to the Master's Program in Mathematics:</strong> Sharif University of Technology (2022) - declined offer</li>
-            <li>$1.2 Reward Check from Donald Knuth for identifying a mistake in <em>The Art of Computer Programming</em> <a href="https://www.linkedin.com/posts/mohammadjavad-vaez-172145125_if-youre-interested-in-computer-science-activity-6741344169433825280-OUj_">Link to explanation</a></li>
-          </ul>
-          
-          <h3 id="teaching-experience">TEACHING EXPERIENCE</h3>
-          <ul>
-            <li>Fall 2024: <strong>TA for Advanced Theory of Algorithms</strong>, University of Tehran, Instructor: Dr. Morteza Mohammad-Noori</li>
-            <li>Fall 2018: <strong>TA for Calculus II</strong>, University of Isfahan, Instructor: Dr. Ehsan Hakimian</li>
-          </ul>
-          
-          <h3 id="computer-skills">COMPUTER SKILLS</h3>
-          <ul>
-            <li>C/C++, Matlab, Python, HTML, CSS, \( \LaTeX \), Proteus, Hspice, VHDL, AVR Microcontrollers</li>
-            <li><a href="https://www.linkedin.com/learning/certificates/e460432ad2da6c952e49ad1dbc332ca90222d41b8165796f9129fd3a5e468d44?trk=share_certificate%20#projectmanagement%20#github">GitHub Project Management and Collaboration</a></li>
-          </ul>
-
-          <h3 id="languages">LANGUAGES</h3>
-          <ul>
-            <li>Persian: <strong>Native</strong></li>
-            <li>English: <strong>Fluent, IELTS score: 7 (Speaking: 7.5)</strong></li>
-          </ul>
-<h3 id="important-projects-or-presentations">IMPORTANT PROJECTS OR PRESENTATIONS</h3>
-<ul>
-  <li>
-    <strong>Realtime Embedded Systems:</strong>
-    <a href="https://mjvaez.github.io/Realtime_embedded_systems.pdf">PDF File</a>
-  </li>
-  <li>
-    <strong>Buchberger Algorithm and Gröbner Basis in Inverse Kinematics of Manipulators:</strong>
-    <a href="https://www.youtube.com/watch?v=87cTbntiUwk">YouTube Video (Persian presentation)</a>
-  </li>
-  <li>
-    <strong>Persian presentation of the paper "Learning the travelling salesperson problem requires rethinking generalization":</strong>
-    <a href="https://www.youtube.com/watch?v=KZ6DBFTYOQE">YouTube Video</a>
-  </li>
-  <li>
-    <strong>Presentation of the paper "BrainGB: A Benchmark for Brain Network Analysis with Graph Neural Networks":</strong>
-    <a href="BrainGB.pdf" target="_blank">PDF File</a>
-  </li>
-  <li>
-    Generally, this is my YouTube account on which I upload my presentations: 
-    <a href="https://youtube.com/@mohammadjavadvaez">youtube.com/@mohammadjavadvaez</a>
-  </li>
-  <li>
-    This is my Stack Exchange account and you can see my activity: 
-    <a href="https://stackexchange.com/users/activity/13955498?page=1&filter=posts">My Activity on Stack Exchange</a>
-  </li>
-</ul>
-<h3 id="research-interests">RESEARCH INTERESTS</h3>
-<ul>
-  <li><strong>Areas of Expertise:</strong>
-    <ul>
-      <li>Machine Learning</li>
-      <li>Neural Networks</li>
-      <li>Graph Neural Networks (GNN)</li>
-      <li>Signal Processing</li>
-      <li>Randomized Algorithms</li>
-      <li>Automata Theory</li>
-      <li>Control Theory</li>
-      <li>Stochastic Mathematics (including Probabilistic Graphical Models, Stochastic Cellular Automata, etc.)</li>
-    </ul>
-  </li>
-  <li><strong>Areas of Interest:</strong>
-    <ul>
-      <li>Bioinformatics</li>
-      <li>Quantum Computing</li>
-      <li>Geometric Deep Learning</li>
-    </ul>
-  </li>
-</ul>
-        </div>
-      </div>
-    </div>
-<footer class="site-footer">
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <h4>CONTACT</h4>
-
-        <div class="social-links">
-          <div class="social-link contact-links">
-            <i class="fa-solid fa-envelope-open-text" style="font-size: 1.25em;"></i>
-            <span
-              data-resu="3imezakp"
-              data-eman-niamod="liamg"
-              data-dlt-niamod="moc"
-              id="email-link"
-              class="link email-link-cloaked"
-            >
-              mohammadjavadvaez@<b>mohammadjavadvaez</b>gmail<b>.gmail</b>.com
-            </span>
-          </div>
-
-          <!-- You can add another email link if needed, otherwise you can remove this section -->
-        </div>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <h4>FOLLOW</h4>
-
-        <div class="social-links follow-links">
-          <div class="social-link">
-            <i class="fa-brands fa-twitter" style="font-size: 1.25em;"></i>
-            <a href="http://x.com/mjvaez">
-              Twitter (X)
-            </a>
-          </div>
-
-          <div class="social-link">
-            <i class="fa-brands fa-google-scholar" style="font-size: 1.25em;"></i>
-            <a href="https://scholar.google.com/citations?user=gbL5xTgAAAAJ">
-              Google Scholar
-            </a>
-          </div>
-
-          <div class="social-link">
-            <i class="fa-brands fa-linkedin-in" style="font-size: 1.25em;"></i>
-            <a href="http://linkedin.com/in/mohammadjavad-vaez-172145125">
-              LinkedIn
-            </a>
-          </div>
-
-          <div class="social-link">
-            <i class="fa-brands fa-github" style="font-size: 1.25em;"></i>
-            <a href="http://github.com/mjvaez">
-              GitHub
-            </a>
-          </div>
-
-          <div class="social-link">
-            <i class="fa-brands fa-github" style="font-size: 1.25em;"></i>
-            <a href="http://instagram.com/mjvaez">
-              Instagram
-            </a>
-          </div>
-
-          <!-- Remove or replace the Unsplash section as you don't have one -->
-          <!-- <div class="social-link">
-            <i class="fa-brands fa-unsplash" style="font-size: 1.25em;"></i>
-            <a href="https://unsplash.com/@mjvaez">
-              Unsplash
-            </a>
-          </div> -->
-        </div>
-      </div>
-
-      <div class="footer-col footer-col-3 powered-by">
-        <p>
-          powered by <a href="https://github.com/eliottvincent/bay">Bay</a> | <span id="year"></span>
-        </p>
-      </div>
+      <!-- Rest of your content goes here -->
     </div>
   </div>
-</footer>
 
-  </body>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
 </html>
