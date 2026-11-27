@@ -95,5 +95,83 @@
 
         </div>
       </div>
-    </div> <footer class="site-footer">   <div class="wrapper">     <div class="footer-col-wrapper">       <div class="footer-col footer-col-1">         <h4>CONTACT</h4>          <div class="social-links">           <div class="social-link contact-links">             <i class="fa-solid fa-envelope-open-text" style="font-size: 1.25em;"></i>             <span               data-resu="3imezakp"               data-eman-niamod="liamg"               data-dlt-niamod="moc"               id="email-link"               class="link email-link-cloaked"             >               mohammadjavadvaez@<b>mohammadjavadvaez</b>gmail<b>.gmail</b>.com             </span>           </div>            <!-- You can add another email link if needed, otherwise you can remove this section -->         </div>       </div>        <div class="footer-col footer-col-2">         <h4>FOLLOW</h4>          <div class="social-links follow-links">           <div class="social-link">             <i class="fa-brands fa-twitter" style="font-size: 1.25em;"></i>             <a href="http://x.com/mjvaez">               Twitter (X)             </a>           </div>            <div class="social-link">             <i class="fa-brands fa-google-scholar" style="font-size: 1.25em;"></i>             <a href="https://scholar.google.com/citations?user=gbL5xTgAAAAJ">               Google Scholar             </a>           </div>            <div class="social-link">             <i class="fa-brands fa-linkedin-in" style="font-size: 1.25em;"></i>             <a href="http://linkedin.com/in/mohammadjavad-vaez-172145125">               LinkedIn             </a>           </div>            <div class="social-link">             <i class="fa-brands fa-github" style="font-size: 1.25em;"></i>             <a href="http://github.com/mjvaez">               GitHub             </a>           </div>            <div class="social-link">             <i class="fa-brands fa-github" style="font-size: 1.25em;"></i>             <a href="http://instagram.com/mjvaez">               Instagram             </a>           </div>            <!-- Remove or replace the Unsplash section as you don't have one -->           <!-- <div class="social-link">             <i class="fa-brands fa-unsplash" style="font-size: 1.25em;"></i>             <a href="https://unsplash.com/@mjvaez">               Unsplash             </a>           </div> -->         </div>       </div>        <div class="footer-col footer-col-3 powered-by">         <p>           powered by <a href="https://github.com/eliottvincent/bay">Bay</a> | <span id="year"></span>         </p>       </div>     </div>   </div> </footer>      <script type="module" src="jelly-cube-runtime.js?v=20261127-3"></script>
+    </div> <footer class="site-footer">   <div class="wrapper">     <div class="footer-col-wrapper">       <div class="footer-col footer-col-1">         <h4>CONTACT</h4>          <div class="social-links">           <div class="social-link contact-links">             <i class="fa-solid fa-envelope-open-text" style="font-size: 1.25em;"></i>             <span               data-resu="3imezakp"               data-eman-niamod="liamg"               data-dlt-niamod="moc"               id="email-link"               class="link email-link-cloaked"             >               mohammadjavadvaez@<b>mohammadjavadvaez</b>gmail<b>.gmail</b>.com             </span>           </div>            <!-- You can add another email link if needed, otherwise you can remove this section -->         </div>       </div>        <div class="footer-col footer-col-2">         <h4>FOLLOW</h4>          <div class="social-links follow-links">           <div class="social-link">             <i class="fa-brands fa-twitter" style="font-size: 1.25em;"></i>             <a href="http://x.com/mjvaez">               Twitter (X)             </a>           </div>            <div class="social-link">             <i class="fa-brands fa-google-scholar" style="font-size: 1.25em;"></i>             <a href="https://scholar.google.com/citations?user=gbL5xTgAAAAJ">               Google Scholar             </a>           </div>            <div class="social-link">             <i class="fa-brands fa-linkedin-in" style="font-size: 1.25em;"></i>             <a href="http://linkedin.com/in/mohammadjavad-vaez-172145125">               LinkedIn             </a>           </div>            <div class="social-link">             <i class="fa-brands fa-github" style="font-size: 1.25em;"></i>             <a href="http://github.com/mjvaez">               GitHub             </a>           </div>            <div class="social-link">             <i class="fa-brands fa-github" style="font-size: 1.25em;"></i>             <a href="http://instagram.com/mjvaez">               Instagram             </a>           </div>            <!-- Remove or replace the Unsplash section as you don't have one -->           <!-- <div class="social-link">             <i class="fa-brands fa-unsplash" style="font-size: 1.25em;"></i>             <a href="https://unsplash.com/@mjvaez">               Unsplash             </a>           </div> -->         </div>       </div>        <div class="footer-col footer-col-3 powered-by">         <p>           powered by <a href="https://github.com/eliottvincent/bay">Bay</a> | <span id="year"></span>         </p>       </div>     </div>   </div> </footer>      <script>
+(() => {
+  const img = document.querySelector(".jelly-fallback");
+  if (!img) return;
+  const removeWhiteBackground = () => {
+    if (img.dataset.backgroundCleaned || !img.naturalWidth) return;
+    img.dataset.backgroundCleaned = "true";
+    const width = img.naturalWidth;
+    const height = img.naturalHeight;
+    const canvas = document.createElement("canvas");
+    canvas.width = width;
+    canvas.height = height;
+    const context = canvas.getContext("2d", { willReadFrequently: true });
+    if (!context) return;
+    context.drawImage(img, 0, 0);
+    const image = context.getImageData(0, 0, width, height);
+    const pixels = image.data;
+    const count = width * height;
+    const queued = new Uint8Array(count);
+    const queue = new Uint32Array(count);
+    let read = 0;
+    let write = 0;
+    const isWhiteBackground = (pixel) => {
+      const offset = pixel * 4;
+      const red = pixels[offset];
+      const green = pixels[offset + 1];
+      const blue = pixels[offset + 2];
+      const low = Math.min(red, green, blue);
+      const high = Math.max(red, green, blue);
+      return low > 180 && high - low < 100;
+    };
+    const add = (pixel) => {
+      if (!queued[pixel] && isWhiteBackground(pixel)) {
+        queued[pixel] = 1;
+        queue[write++] = pixel;
+      }
+    };
+    for (let x = 0; x < width; x++) {
+      add(x);
+      add((height - 1) * width + x);
+    }
+    for (let y = 0; y < height; y++) {
+      add(y * width);
+      add(y * width + width - 1);
+    }
+    while (read < write) {
+      const pixel = queue[read++];
+      const x = pixel % width;
+      const y = Math.floor(pixel / width);
+      if (x > 0) add(pixel - 1);
+      if (x + 1 < width) add(pixel + 1);
+      if (y > 0) add(pixel - width);
+      if (y + 1 < height) add(pixel + width);
+    }
+    for (let pixel = 0; pixel < count; pixel++) {
+      if (!queued[pixel]) continue;
+      const offset = pixel * 4;
+      const low = Math.min(pixels[offset], pixels[offset + 1], pixels[offset + 2]);
+      const high = Math.max(pixels[offset], pixels[offset + 1], pixels[offset + 2]);
+      const alpha = Math.min(1, (high - low) / 170);
+      if (alpha < 0.02) {
+        pixels[offset + 3] = 0;
+        continue;
+      }
+      for (let channel = 0; channel < 3; channel++) {
+        pixels[offset + channel] = Math.max(0, Math.min(255,
+          Math.round((pixels[offset + channel] - 255 * (1 - alpha)) / alpha)));
+      }
+      pixels[offset + 3] = Math.round(pixels[offset + 3] * alpha);
+    }
+    context.putImageData(image, 0, 0);
+    img.src = canvas.toDataURL("image/png");
+  };
+  if (img.complete) removeWhiteBackground();
+  else img.addEventListener("load", removeWhiteBackground, { once: true });
+})();
+</script>
+
+<script type="module" src="jelly-cube-runtime.js?v=20261127-3"></script>
 </body> </html>
