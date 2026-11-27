@@ -168,7 +168,7 @@
     context.putImageData(image, 0, 0);
     img.src = canvas.toDataURL("image/png");
   };
-  if (img.complete) removeWhiteBackground();
+  if (img.complete && img.naturalWidth > 0) removeWhiteBackground();
   else img.addEventListener("load", removeWhiteBackground, { once: true });
 })();
 </script>
