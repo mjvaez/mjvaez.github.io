@@ -35,8 +35,8 @@ body .cv-header{display:block!important}
 .cv-header{min-height:242px}
 .cv-header>p{margin-right:260px}
 .cv-header .jelly-wrap{--jelly-surface:#fff4f8;--jelly-absorption:#d53180;--jelly-light:#e44f8c;--jelly-glow:rgba(213,49,128,.35);position:absolute;z-index:2;right:18px;top:4px;width:232px;min-height:224px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:2px;color:#b9c8df}
-.jelly-stage{position:relative;width:220px;height:174px;overflow:hidden;isolation:isolate;touch-action:none;cursor:grab}
-.jelly-stage canvas,.jelly-fallback{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain}
+.jelly-stage{position:relative;width:220px;height:174px;overflow:hidden;isolation:isolate;touch-action:none;cursor:grab;background:transparent}
+.jelly-stage canvas,.jelly-fallback{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;background:transparent}
 .jelly-stage canvas{outline:none}
 .jelly-stage canvas:focus-visible{outline:2px solid var(--cyan);outline-offset:-2px}
 .jelly-fallback{pointer-events:none}
@@ -49,8 +49,8 @@ body .cv-header{display:block!important}
 .jelly-color span{width:10px;height:10px;border-radius:50%}
 .jelly-color[aria-pressed=true] span{outline:1px solid currentColor;outline-offset:3px}
 .jelly-control-divider{width:1px;height:12px;margin:0 2px;background:rgba(151,185,232,.28)}
-.jelly-hint{color:#b9c8df;font-size:10px;line-height:1.2;text-align:center;white-space:nowrap}
-.jelly-credit{color:#8293ad;font-size:9px;line-height:1.1;text-decoration:none}
+.jelly-hint{display:none}
+.jelly-credit{display:none}
 .jelly-credit:hover{color:var(--cyan);text-decoration:underline}
 .jelly-wrap[data-status=unavailable] .jelly-stage{cursor:default}
 @media(max-width:700px){.cv-header{min-height:246px}.cv-header>p{max-width:60%;margin-right:0}.cv-header .jelly-wrap{right:4px;top:4px;width:205px;transform:scale(.84);transform-origin:top right}}
